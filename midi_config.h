@@ -29,7 +29,7 @@ uint8_t NOTES[] = {
 */
 
 const uint8_t OCTAVE_AMMOUNT = 1;
-const uint8_t INITIAL_OCTAVE_OFFSET = 4; // MUST BE LOWER THAN 8 - OCTAVE_AMMOUNT
+const uint8_t INITIAL_OCTAVE_OFFSET = 2; // MUST BE LOWER THAN 8 - OCTAVE_AMMOUNT
 
 //  Pins to offset notes in octaves
 const uint8_t OCTAVE_UP = 12;

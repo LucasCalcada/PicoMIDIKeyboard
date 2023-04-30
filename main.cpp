@@ -72,7 +72,7 @@ void midi_task(void)
 
     // Interval to prevent double clicks
     if (board_millis() - start_ms < TASK_INTERVAL) return;
-    start_ms += 10;
+    start_ms += TASK_INTERVAL;
 
     for (int i = 0; i < 12 * OCTAVE_AMMOUNT; i++)
     {
@@ -111,8 +111,8 @@ void change_octaves_task(void){
     bool octUp = gpio_get(OCTAVE_UP);
     bool octDwn = gpio_get(OCTAVE_DOWN);
 
-    if(octDwn && !octaveBtnLastVals[0]) octaveOffset -= 12 * OCTAVE_AMMOUNT;
-    if(octUp && !octaveBtnLastVals[1]) octaveOffset += 12 * OCTAVE_AMMOUNT;
+    if(octDwn && !octaveBtnLastVals[0]) octaveOffset -= 1;
+    if(octUp && !octaveBtnLastVals[1]) octaveOffset += 1;
 
     // Clamps offset value
     if(octaveOffset < 0) octaveOffset = 0;

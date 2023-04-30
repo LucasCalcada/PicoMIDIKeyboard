@@ -1,6 +1,6 @@
 # Pico MIDI Keyboard
 Firmware de controlador MIDI para o Raspberry Pi Pico  
-Guia disponível em: [:brazil:](/assets/readmes/pt-br.md), [:us:](README.md)
+Guia disponível em: [:brazil:](/assets/readmes/pt-br.md), [:us:](/README.md)
 ![Configuração padrão](/assets/pinout.png "Configuração padrão da placa")
 ## Montando o projeto
 Se você não tem o SDK do pico instalado, execute os seguintes comandos *(não se esqueça de trocar ```<PATH-TO-PICO-SDK>``` pelo caminho do seu SDK):
